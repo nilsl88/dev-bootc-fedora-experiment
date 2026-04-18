@@ -14,7 +14,7 @@ This repository is a write-up of working with bootc and the working commands tha
 The source image is built from:
 
 ```Dockerfile
-FROM ghcr.io/bootc-dev/dev-bootc:fedora-$VERSION
+FROM ghcr.io/bootc-dev/dev-bootc:fedora-43
 ```
 
 The image includes a working Caddy web server and is intended to be converted into bootable artifacts with `bootc-image-builder`.
