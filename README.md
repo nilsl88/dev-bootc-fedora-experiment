@@ -49,8 +49,8 @@ The image includes a working Caddy web server and is intended to be converted in
 Clone the repo and create the output directory:
 
 ```bash
-git clone 
-cd repo
+git clone git@github.com:nilsl88/dev-bootc-fedora-experiment.git
+cd dev-bootc-fedora-experiment
 mkdir -p output
 ```
 
@@ -118,7 +118,7 @@ Note:
 - when building multiple platforms, use `--manifest` instead of `-t`
 
 
-##  Build the image for hypervisor and bare metal boot
+## Build the image for hypervisor and bare metal boot
 
 Pre-pull the required helper images:
 
@@ -148,7 +148,7 @@ sudo podman run --rm -it --privileged \
   docker.io/l88repo/dev-bootc:fedora-43-caddy-v1
 ```
 
-## Build `iso`
+## Build `ISO`
 
 `config-iso.toml` is used here for ISO metadata plus a user definition.
 
@@ -167,7 +167,7 @@ sudo podman run --rm -it --privileged \
   docker.io/l88repo/dev-bootc:fedora-43-caddy-v1
 ```
 
-## Build Kickstart ISO With XFS
+## Build `Kickstart ISO With XFS`
 
 `config-kickstart.toml` embeds a Kickstart file that creates:
 
@@ -191,7 +191,7 @@ sudo podman run --rm -it --privileged \
   docker.io/l88repo/dev-bootc:fedora-43-caddy-v1
 ```
 
-## Build Kickstart ISO With Btrfs
+## Build `Kickstart ISO With Btrfs`
 
 `config-kickstart-btrfs.toml` embeds a Kickstart file that creates:
 
