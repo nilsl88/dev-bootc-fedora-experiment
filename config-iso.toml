@@ -1,0 +1,14 @@
+[[customizations.user]]
+name = "nix"
+password = "password"
+groups = ["wheel"]
+key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE0KRfd6Xm3aRKRKVbqoWDIgN8Y8LvD/DdozE3cPzlZ/"
+
+
+[customizations.iso]
+volume_id = "DEVBOOTC"
+application_id = "Fedora 43 bootc installer"
+publisher = "l88repo"
+
+[customizations.kernel]
+append = "quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3"
