@@ -5,7 +5,7 @@ RUN printf 'KEYMAP=dk\n' > /etc/vconsole.conf && \
     echo "max_parallel_downloads=20" >> /etc/yum.conf
 
 # Install Caddy and keep the image clean
-RUN dnf upgrade -y && dnf -y install tree vim htop caddy && \
+RUN dnf upgrade -y && dnf -y install caddy && \
     dnf clean all
 
 # Put in a very simple static Caddy config
