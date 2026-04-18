@@ -19,6 +19,12 @@ FROM ghcr.io/bootc-dev/dev-bootc:fedora-43
 
 The image includes a working Caddy web server and is intended to be converted into bootable artifacts with `bootc-image-builder`.
 
+![Docker Image Size](https://img.shields.io/docker/image-size/l88repo/dev-bootc/fedora-43-caddy-v2?logo=docker&label=image%20size)
+| Architecture | Available | Tag |
+| :----: | :----: | ---- |
+| x86-64 | ✅ | \<version tag\> |
+| arm64 | ✅ | \<version tag\> |
+| armhf | ❌ | |
 
 ## Notes From The Experiment
 
